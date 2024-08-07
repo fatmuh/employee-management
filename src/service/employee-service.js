@@ -27,7 +27,11 @@ const create = async (request) => {
         select: {
             nama: true,
             nomor: true,
+            jabatan: true,
+            departmen: true,
+            tanggal_masuk: true,
             foto: true,
+            status: true
         }
     });
 }
