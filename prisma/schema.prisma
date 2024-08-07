@@ -20,7 +20,7 @@ model Employee {
   departmen     String   @db.VarChar(30)
   tanggal_masuk DateTime @db.Date
   foto          String   @db.Text
-  status        String?  @db.VarChar(10)
+  status        String   @db.VarChar(10)
 
   @@map("employees")
 }

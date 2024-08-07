@@ -1,7 +1,8 @@
 class ResponseError extends Error {
-    constructor(status, message) {
-        super(message);
+    constructor(status, errors) {
+        super("Validation error");
         this.status = status;
+        this.errors = errors;
     }
 }
 
